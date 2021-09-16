@@ -39,14 +39,20 @@ header h1{
 
 nav ul li{
     text-align: center;
+    text-decoration: none;
 }
 section{
+    box-shadow: #fafafa;
     max-width: 80rem ;
     margin: 0 auto 2rem  ;
     border: .1rem #ccc solid;
     padding: 1rem ;
     background-color: #f1bfbf;
     text-align: justify;
+    border-radius: 15px 15px 15px 15px;
+}
+section li{
+    text-decoration: none;
 }
 section h2{
     text-align: justify;
@@ -60,13 +66,24 @@ section h2 p{
 
     margin: 1rem;
 }
+h3{
+    text-align: justify;
+    background-color: #fafafa;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    max-width: 80rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
 footer{
         text-align: justify;
         max-width: 80rem ;
-        margin: 0 auto 2rem  ;
+        margin: 0 auto 4rem  ;
+        margin-top: auto;
         border: .1rem #ccc solid;
         padding: 1rem ;
-        background-color: #f1bfbf;    
+        background-color: #f1bfbf; 
+        border-radius: 15px 15px 15px 15px;   
 }
 footer h3{
     text-align: justify;
