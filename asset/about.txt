@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Kameron
-- Font Author: Copyright (c) 2011 by vernon adams. All rights reserved.
-- Font Source: http://fonts.gstatic.com/s/kameron/v11/vm82dR7vXErQxuznsL4wL-XIYH8.ttf
+- Font Title: Audiowide
+- Font Author: Copyright (c) 2012 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved Font Name "Audiowide"
+- Font Source: http://fonts.gstatic.com/s/audiowide/v14/l7gdbjpo0cum0ckerWCtkQXPExpQBw.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

@@ -1,95 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 /* RESET CSS*/
-html{
+
+html {
     font-size: 62.5%;
 }
-body{
-    font: 1.6rem 'Open sans', sans-serif;
+
+body {
+    font: 1.6rem 'Open sans', audiowide;
     margin: 0;
 }
 
-h1, h2, h3, h4, p, figure, ul,th,td,caption{
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+ul,
+th,
+td,
+caption {
     margin: 0;
     padding: 0;
     font-weight: 400;
     list-style: none;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     outline: none;
 }
+
+
 /* THEME CSS */
-:root{
+
+:root {
     --color-default: #000;
     --color-primary: #7A293C;
-    --color-secondary:#f1bfbf;
-}
-header h1{
-    line-height: 6rem;
-    text-align: center;
-    margin-bottom: 6rem;
-    background-color: var(--color-secondary);
-    color: #222;
-    font-weight: 100;
+    --color-secondary: #EAE3C9;
 }
 
-nav ul li{
+
+/* scroll bars */
+
+* {
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #222 #333;
+}
+
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+
+header {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+
+header img {
+    background-color: var(--color-secondary);
+    padding-left: 78rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-family: audiowide;
     text-align: center;
-    text-decoration: none;
+    background-color: var(--color-secondary);
+    border-bottom: solid 0.3rem #222;
+    padding: 1rem;
+    color: #222;
 }
-section{
+
+.burger {
+    cursor: pointer;
+    z-index: 5;
+    text-align: center;
+    color: rgb(6, 6, 6);
+    font-size: 5rem;
+    border-radius: 5rem;
+    width: 7rem;
+}
+
+header nav {
+    display: none;
+}
+
+.open-menu {
+    position: fixed;
+    display: block;
+    width: 20rem;
+    z-index: 2;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    background-color: rgba(32, 34, 37, .8);
+}
+
+.open-menu nav {
+    position: static;
+    display: block;
+}
+
+.open-menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.open-menu ul li {
+    width: 90%;
+    height: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 246, 248);
+    transition: 1s;
+}
+
+.open-menu ul li:hover {
+    transform: scale(1.08);
+    transition: .3s all ease-in-out;
+}
+
+.open-menu ul li a {
+    width: 90%;
+    color: black;
+}
+
+section {
     box-shadow: #fafafa;
-    max-width: 80rem ;
-    margin: 0 auto 2rem  ;
-    border: .1rem #ccc solid;
-    padding: 1rem ;
-    background-color: #f1bfbf;
+    max-width: 100rem;
+    margin: 0 auto 2rem;
+    border: .01rem #D2BD96 solid;
+    height: 18rem;
+    background-color: var(--color-secondary);
     text-align: justify;
-    border-radius: 15px 15px 15px 15px;
-}
-section li{
     text-decoration: none;
 }
-section h2{
+
+section ul li {
+    text-decoration: none;
+}
+
+section h2 {
     text-align: justify;
     background-color: #fafafa;
     margin: 0 auto 2rem;
     padding: 1rem;
-    max-width: 80rem;
-    border-radius: 15px 15px 15px 15px;
+    max-width: 100rem;
 }
-section h2 p{
 
+section h2 p {
     margin: 1rem;
 }
-h3{
+
+h3 {
     text-align: justify;
     background-color: #fafafa;
     margin: 0 auto 2rem;
     padding: 1rem;
-    max-width: 80rem;
-    border-radius: 15px 15px 15px 15px;
+    max-width: 100rem;
 }
 
-footer{
-        text-align: justify;
-        max-width: 80rem ;
-        margin: 0 auto 4rem  ;
-        margin-top: auto;
-        border: .1rem #ccc solid;
-        padding: 1rem ;
-        background-color: #f1bfbf; 
-        border-radius: 15px 15px 15px 15px;   
+footer {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 4rem;
+    position: absolute;
+    border: .1rem #ccc solid;
+    background-color: var(--color-secondary);
 }
-footer h3{
-    text-align: justify;
-    background-color: #fafafa;
-    margin: 0 auto 2rem;
-    padding: 1rem;
-    max-width: 80rem;
-    border-radius: 15px 15px 15px 15px;
+
+@media screen and (max-width: 75rem) {
+    main {
+        padding: 1rem;
+    }
+    footer .orga {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .link {
+        max-width: 5rem;
+    }
 }
